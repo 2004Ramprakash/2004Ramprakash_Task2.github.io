@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #colorButton {
+      font-size: 18px;
+      padding: 8px 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    #colorfulText {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: 50px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .done {
+      text-decoration: line-through;
+      color: #aaa;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Interactive Webpage</h1>
+  <button id="colorButton">Change Color</button>
+  <p id="colorfulText">This text will change color when you click the button!</p>
+  <div class="calculator">
+    <h2>Simple Calculator</h2>
+    <input type="text" id="result" readonly>
+    <div class="buttons">
+      <button onclick="clearResult()">C</button>
+      <button onclick="appendToResult('7')">7</button>
+      <button onclick="appendToResult('8')">8</button>
+      <button onclick="appendToResult('9')">9</button>
+      <button onclick="appendToResult('+')">+</button>
+      <button onclick="appendToResult('4')">4</button>
+      <button onclick="appendToResult('5')">5</button>
+      <button onclick="appendToResult('6')">6</button>
+      <button onclick="appendToResult('-')">-</button>
+      <button onclick="appendToResult('1')">1</button>
+      <button onclick="appendToResult('2')">2</button>
+      <button onclick="appendToResult('3')">3</button>
+      <button onclick="appendToResult('*')">*</button>
+      <button onclick="appendToResult('0')">0</button>
+      <button onclick="appendToResult('.')">.</button>
+      <button onclick="calculateResult()">=</button>
+      <button onclick="appendToResult('/')">/</button>
+    </div>
+  </div>
+  <div class="container">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task...">
+    <button id="addButton">Add</button>
+    <button id="removeButton">Remove Completed</button>
+    <ul id="taskList">
+     
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
